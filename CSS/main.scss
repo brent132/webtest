@@ -1,0 +1,362 @@
+body{
+    background: url(../images/grass.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+}
+
+.hero-center{
+    display: grid;
+    place-content: center;
+    margin-top: 10em;
+
+    .hero{
+        text-align: center;
+        width: 280px;
+
+        img{
+            width: 60px;
+        }
+
+        .button{
+            margin-top: 1em;
+            display: grid;
+            place-content: center;
+            
+            #click{
+                display: none;
+            }
+
+            .login-button{
+                background: greenyellow;
+                padding: .3em 1.3em;
+                border-radius: 19px;
+                border: none;
+                font-family: 'poppins';
+                font-size: 17px;
+                transition: background-position.7s,
+                box-shadow .4s;
+                cursor: pointer;
+                overflow: hidden;
+                color: white;
+
+                box-shadow: 0px 0px 0px 2px rgba(255,255,255,0.16) inset,
+                 0px 0px 5px 0px #111111;
+                background-image: linear-gradient( to bottom,
+                #00ac17c4, #40d3f852),
+                url("../images/building.jpg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                place-content: center;
+
+            }
+            .login-button:hover{
+                color: #f9fc52d7;
+                transition: .7s;
+                background-position: 0 50%;
+            }
+
+            .content{
+            position: absolute;
+            background: white;
+            border-radius: 15px;
+            width: 350px;
+            height: 450px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50% , -50%);
+            opacity: 0;
+            visibility: hidden;
+            transition: .3s ease-in;
+
+            .close-btn{
+                position: absolute;
+                background: white;
+                padding: 8px;
+                border-radius: 50%;
+                display: grid;
+                place-content: center;
+                cursor: pointer;
+                transform: translate(-50%);
+                left: 50%;
+                top: -2.7em;
+                outline: none;
+
+                img{
+                    width: 21px;
+                }
+            }
+
+            .svg{
+                position: relative;
+                z-index: -1;
+
+                .one{
+                    position: absolute;
+                    width: 22.9px;
+                    left: 38px;
+                }
+                .two{
+                    position: absolute;
+                    width: 125px;
+                    right: 38px;
+                }
+                .three{
+                    position: absolute;
+                    width: 55px;
+                    top: 30px;
+                    left: 22px;
+                }
+            }
+
+            .content-items{
+                background: none;
+
+                .sender{
+                    margin-top: 4em;
+                    display: grid;
+                    place-content: center;
+        
+                    .type{
+                        position: relative;
+                        border-bottom: 2px solid #adadad;
+                        width: 270px;
+                        margin-top: 3em;
+                        font-family: 'poppins';
+                        font-size: 12px;
+                    }
+                    
+                    .type input{
+                        width: 100%;
+                        padding: 0 5px;
+                        height: 30px;
+                        border: none;
+                        background: none;
+                        outline: none;
+                    }
+        
+                    .type label{
+                        position: absolute;
+                        top: 50%;
+                        left: 5px;
+                        color: #dadada;
+                        transform: translateY(-50%);
+                        pointer-events: none;
+                        transition: .6s;
+                    }
+        
+                    .type span::before{
+                        content: '';
+                        position: absolute;
+                        top: 30px;
+                        left: 0;
+                        width: 0%;
+                        height: 2px;
+                        background: #268D2C;
+                        transition: .4s;
+                    }
+        
+                    .type input:focus ~ label,
+                    .type input:valid ~ label{
+                        top: -1px;
+                        color: #268D2C;
+                    }
+        
+                    .type input:focus ~ span::before,
+                    .type input:valid ~ span::before{
+                        width: 100%;
+                    }
+                }
+
+                .center-pass{
+                    height: 79px;
+                    place-content: center;
+                    display: grid;
+        
+                    .pass{
+                        display: flex;
+                        position: relative;
+                        width: 270px;
+                        
+                        
+                        a{
+                            text-decoration: none;
+                        }
+                        
+                        .remember-me,.password{
+                            font-family: 'poppins';
+                            font-size: 10px;
+                            position: absolute;
+                            margin-top: 2px;
+                        }
+            
+                        .remember-me{
+                            left: 0;
+                            margin-left: 2em;
+                            color: #268D2C;
+                        }
+                        .password{
+                            right: 0;
+                            color: #939C33;
+                        }
+                    }
+                }
+
+                .done{
+                    position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                    height: 60px;
+                    display: flex;
+                    justify-content: space-between;
+        
+                    .notamember{
+                        display: flex;
+                        margin-left: 3.9em;
+        
+                        p{
+                            font-family: 'poppins';
+                            font-size: 11px;
+                            color: #268D2C;
+                            display: grid;
+                            place-content: center;
+                        }
+                        a{
+                            font-family: 'poppins';
+                            font-size: 11px;
+                            color: #939C33;
+                            margin-left: 7px;
+                            display: grid;
+                            place-content: center;
+                        }
+        
+                    }
+                    .login{
+                        place-content: center;
+                        display: grid;
+                        margin-right: 2.4em;
+        
+                        input{
+                            background: #268d2bc0;
+                            color: white;
+                            padding: 8px 19px;
+                            border-radius: 16px;
+                            border: none;
+                            font-family: 'poppins';
+                            cursor: pointer;
+                        }
+                        
+                    }
+                }
+            }
+            
+            }
+            #click:checked ~.content{
+                opacity: 1;
+                visibility: visible;
+            }
+
+        }
+
+        
+    }
+}
+
+.social-center{
+    display: grid;
+    place-content: center;
+
+    .social-container{
+        position: absolute;
+        width: 20px;
+        display: grid;
+        place-content: center;
+        padding: 10px;
+        right: 0;
+        bottom: 0;
+
+        a{
+          margin-top: 10px;  
+        }
+        img{
+            width: 20px;
+        }
+    }
+}
+
+.bubbles-center{
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    overflow: hidden;
+
+    .bubbles li{
+        position: absolute;
+        list-style: none;
+        background-color: rgba(255,255,255,0.15);
+        border-radius: 50%;
+        bottom: -100px;
+        animation: square 20s infinite;
+        transition-timing-function: linear;
+    
+    }
+    .bubbles li:nth-child(1){
+        width: 40px;
+        height: 40px;
+        left: 20%;
+    }
+    .bubbles li:nth-child(2){
+        width: 60px;
+        height: 60px;
+        left: 40%;
+        animation-delay: 2s;
+        animation-duration: 19s;
+    }
+    .bubbles li:nth-child(3){
+        width: 10px;
+        height: 10px;
+        left: 60%;
+        animation-delay: 4s;
+        animation-duration: 22s;
+    }
+    .bubbles li:nth-child(4){
+        width: 80px;
+        height: 80px;
+        left: 80%;
+        animation-delay: 1s;
+        animation-duration: 22s;
+    }
+    .bubbles li:nth-child(5){
+        width: 50px;
+        height: 50px;
+        left: 50%;
+        animation-delay: 7s;
+        animation-duration: 21s;
+    }
+    .bubbles li:nth-child(6){
+        width: 50px;
+        height: 50px;
+        left: 10%;
+        animation-delay: 5s;
+        animation-duration: 18s;
+    }
+    .bubbles li:nth-child(7){
+        width: 50px;
+        height: 50px;
+        left: 85%;
+        animation-delay: 3s;
+        animation-duration: 25s;
+    }
+    @keyframes square {
+        0%{
+            -webkit-transform: translateY(0);
+    transform: translateY(0);
+    }
+    100%{
+        -webkit-transform: translateY(-1080px) rotate(630deg);
+    transform: translateY(-1080px) rotate(630deg);
+    }
+    }    
+}

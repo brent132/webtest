@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="90" height="43" viewBox="0 0 90 43">
+  <g id="Group_7" data-name="Group 7" transform="translate(-191 -249)">
+    <path id="Rectangle_15" data-name="Rectangle 15" d="M0,0H67a0,0,0,0,1,0,0V.5A33.5,33.5,0,0,1,33.5,34h0A33.5,33.5,0,0,1,0,.5V0A0,0,0,0,1,0,0Z" transform="translate(214 249)" fill="rgba(38,171,47,0.69)"/>
+    <circle id="Ellipse_6" data-name="Ellipse 6" cx="15" cy="15" r="15" transform="translate(191 260)" fill="#939c33"/>
+    <circle id="Ellipse_7" data-name="Ellipse 7" cx="6" cy="6" r="6" transform="translate(221 280)" fill="rgba(38,171,47,0.69)"/>
+    <text id="Login" transform="translate(229 267)" fill="#fff" font-size="14" font-family="Poppins-Medium, Poppins" font-weight="500"><tspan x="0" y="0">Login</tspan></text>
+  </g>
+</svg>

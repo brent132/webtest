@@ -1,0 +1,420 @@
+body {
+  background: url(../IMAGES/grass.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0;
+}
+
+.hero-center {
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  margin-top: 10em;
+}
+
+.hero-center .hero {
+  text-align: center;
+  width: 280px;
+}
+
+.hero-center .hero img {
+  width: 60px;
+}
+
+.hero-center .hero .button {
+  margin-top: 1em;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
+.hero-center .hero .button #click {
+  display: none;
+}
+
+.hero-center .hero .button .login-button {
+  background: greenyellow;
+  padding: .3em 1.3em;
+  border-radius: 19px;
+  border: none;
+  font-family: 'poppins';
+  font-size: 17px;
+  -webkit-transition: background-position 0.7s, -webkit-box-shadow 0.4s;
+  transition: background-position 0.7s, -webkit-box-shadow 0.4s;
+  transition: background-position 0.7s, box-shadow 0.4s;
+  transition: background-position 0.7s, box-shadow 0.4s, -webkit-box-shadow 0.4s;
+  cursor: pointer;
+  overflow: hidden;
+  color: white;
+  -webkit-box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.16) inset, 0px 0px 5px 0px #111111;
+          box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.16) inset, 0px 0px 5px 0px #111111;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#00ac17c4), to(#40d3f852)), url("../images/building.jpg");
+  background-image: linear-gradient(to bottom, #00ac17c4, #40d3f852), url("../images/building.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  place-content: center;
+}
+
+.hero-center .hero .button .login-button:hover {
+  color: #f9fc52d7;
+  -webkit-transition: .7s;
+  transition: .7s;
+  background-position: 0 50%;
+}
+
+.hero-center .hero .button .content {
+  position: absolute;
+  background: white;
+  border-radius: 15px;
+  width: 350px;
+  height: 450px;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: .3s ease-in;
+  transition: .3s ease-in;
+}
+
+.hero-center .hero .button .content .close-btn {
+  position: absolute;
+  background: white;
+  padding: 8px;
+  border-radius: 50%;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  left: 50%;
+  top: -2.7em;
+  outline: none;
+}
+
+.hero-center .hero .button .content .close-btn img {
+  width: 21px;
+}
+
+.hero-center .hero .button .content .svg {
+  position: relative;
+  z-index: -1;
+}
+
+.hero-center .hero .button .content .svg .one {
+  position: absolute;
+  width: 22.9px;
+  left: 38px;
+}
+
+.hero-center .hero .button .content .svg .two {
+  position: absolute;
+  width: 125px;
+  right: 38px;
+}
+
+.hero-center .hero .button .content .svg .three {
+  position: absolute;
+  width: 55px;
+  top: 30px;
+  left: 22px;
+}
+
+.hero-center .hero .button .content .content-items {
+  background: none;
+}
+
+.hero-center .hero .button .content .content-items .sender {
+  margin-top: 4em;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
+.hero-center .hero .button .content .content-items .sender .type {
+  position: relative;
+  border-bottom: 2px solid #adadad;
+  width: 270px;
+  margin-top: 3em;
+  font-family: 'poppins';
+  font-size: 12px;
+}
+
+.hero-center .hero .button .content .content-items .sender .type input {
+  width: 100%;
+  padding: 0 5px;
+  height: 30px;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.hero-center .hero .button .content .content-items .sender .type label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: #dadada;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  pointer-events: none;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+.hero-center .hero .button .content .content-items .sender .type span::before {
+  content: '';
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #268D2C;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.hero-center .hero .button .content .content-items .sender .type input:focus ~ label,
+.hero-center .hero .button .content .content-items .sender .type input:valid ~ label {
+  top: -1px;
+  color: #268D2C;
+}
+
+.hero-center .hero .button .content .content-items .sender .type input:focus ~ span::before,
+.hero-center .hero .button .content .content-items .sender .type input:valid ~ span::before {
+  width: 100%;
+}
+
+.hero-center .hero .button .content .content-items .center-pass {
+  height: 79px;
+  place-content: center;
+  display: -ms-grid;
+  display: grid;
+}
+
+.hero-center .hero .button .content .content-items .center-pass .pass {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 270px;
+}
+
+.hero-center .hero .button .content .content-items .center-pass .pass a {
+  text-decoration: none;
+}
+
+.hero-center .hero .button .content .content-items .center-pass .pass .remember-me, .hero-center .hero .button .content .content-items .center-pass .pass .password {
+  font-family: 'poppins';
+  font-size: 10px;
+  position: absolute;
+  margin-top: 2px;
+}
+
+.hero-center .hero .button .content .content-items .center-pass .pass .remember-me {
+  left: 0;
+  margin-left: 2em;
+  color: #268D2C;
+}
+
+.hero-center .hero .button .content .content-items .center-pass .pass .password {
+  right: 0;
+  color: #939C33;
+}
+
+.hero-center .hero .button .content .content-items .done {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hero-center .hero .button .content .content-items .done .notamember {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 3.9em;
+}
+
+.hero-center .hero .button .content .content-items .done .notamember p {
+  font-family: 'poppins';
+  font-size: 11px;
+  color: #268D2C;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
+.hero-center .hero .button .content .content-items .done .notamember a {
+  font-family: 'poppins';
+  font-size: 11px;
+  color: #939C33;
+  margin-left: 7px;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
+.hero-center .hero .button .content .content-items .done .login {
+  place-content: center;
+  display: -ms-grid;
+  display: grid;
+  margin-right: 2.4em;
+}
+
+.hero-center .hero .button .content .content-items .done .login input {
+  background: #268d2bc0;
+  color: white;
+  padding: 8px 19px;
+  border-radius: 16px;
+  border: none;
+  font-family: 'poppins';
+  cursor: pointer;
+}
+
+.hero-center .hero .button #click:checked ~ .content {
+  opacity: 1;
+  visibility: visible;
+}
+
+.social-center {
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
+.social-center .social-container {
+  position: absolute;
+  width: 20px;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  padding: 10px;
+  right: 0;
+  bottom: 0;
+}
+
+.social-center .social-container a {
+  margin-top: 10px;
+}
+
+.social-center .social-container img {
+  width: 20px;
+}
+
+.bubbles-center {
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  overflow: hidden;
+}
+
+.bubbles-center .bubbles li {
+  position: absolute;
+  list-style: none;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  bottom: -100px;
+  -webkit-animation: square 20s infinite;
+          animation: square 20s infinite;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+}
+
+.bubbles-center .bubbles li:nth-child(1) {
+  width: 40px;
+  height: 40px;
+  left: 20%;
+}
+
+.bubbles-center .bubbles li:nth-child(2) {
+  width: 60px;
+  height: 60px;
+  left: 40%;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-duration: 19s;
+          animation-duration: 19s;
+}
+
+.bubbles-center .bubbles li:nth-child(3) {
+  width: 10px;
+  height: 10px;
+  left: 60%;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+  -webkit-animation-duration: 22s;
+          animation-duration: 22s;
+}
+
+.bubbles-center .bubbles li:nth-child(4) {
+  width: 80px;
+  height: 80px;
+  left: 80%;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-duration: 22s;
+          animation-duration: 22s;
+}
+
+.bubbles-center .bubbles li:nth-child(5) {
+  width: 50px;
+  height: 50px;
+  left: 50%;
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
+  -webkit-animation-duration: 21s;
+          animation-duration: 21s;
+}
+
+.bubbles-center .bubbles li:nth-child(6) {
+  width: 50px;
+  height: 50px;
+  left: 10%;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+  -webkit-animation-duration: 18s;
+          animation-duration: 18s;
+}
+
+.bubbles-center .bubbles li:nth-child(7) {
+  width: 50px;
+  height: 50px;
+  left: 85%;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation-duration: 25s;
+          animation-duration: 25s;
+}
+
+@-webkit-keyframes square {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-1080px) rotate(630deg);
+    transform: translateY(-1080px) rotate(630deg);
+  }
+}
+
+@keyframes square {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-1080px) rotate(630deg);
+    transform: translateY(-1080px) rotate(630deg);
+  }
+}
+/*# sourceMappingURL=main.css.map */
